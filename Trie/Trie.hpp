@@ -60,6 +60,28 @@ public:
         return NULL!=node && node->isEndNode();
     }
     
+    void printStrings(TrieNode *node, string prefix)
+    {
+        if (node->isEndNode())
+        {
+            cout<<prefix << ", ";
+        }
+            for(int i=0;i<26;i++)
+            {
+                char ch = 'a' + i;
+                if (node->containsKey(ch))
+                {
+                    string temp = prefix;
+                    temp.push_back(ch);
+                    printStrings(node->get(ch), temp);
+                }
+            }
+    }
+    void printTrie()
+    {
+        printStrings(root, "");
+    }
+    
     int stringsWithPrefix(string A)
     {
         int strings =0;

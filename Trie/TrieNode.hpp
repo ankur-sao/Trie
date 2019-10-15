@@ -31,7 +31,7 @@ public:
     
     bool containsKey(char ch)
     {
-        return links[ch -'a'];
+        return (NULL != links[ch -'a']);
     }
     
     TrieNode* get(char ch)
@@ -47,6 +47,7 @@ public:
     
     void setEnd(){isEnd = true;}
     bool isEndNode(){return isEnd;}
+    
     int totalLinks()
     {
         int ans=0;
@@ -57,6 +58,8 @@ public:
         return ans;
     }
     
+    /* Define its purpose for y'll's sake
+     */
     int fromNode()
     {
         int ans = 0;
