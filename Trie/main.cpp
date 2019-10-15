@@ -14,13 +14,14 @@
 
 using namespace std;
 
+
 int main(int argc, const char * argv[])
 {
     trie *ltrie = new trie();
     ltrie->insert("ankur");
     ltrie->insert("ankit");
     ltrie->insert("ankita");
-    ltrie->insert("ankuri");
+   ltrie->insert("ankuri");
     ltrie->insert("ankurit");
     
     ltrie->insert("ayush");
@@ -36,8 +37,8 @@ int main(int argc, const char * argv[])
     ltrie->insert("richa");
     ltrie->insert("arushi");
   
-    int x = ltrie->stringsWithPrefix("an");
-    cout<< "vankaush: "<<x<<"\n";
+    ltrie->printTrie();
+    
     
     return 0;
 }
