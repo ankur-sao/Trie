@@ -25,6 +25,9 @@
 /* Begin PBXFileReference section */
 		095806A222243C55005F6B06 /* Trie */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Trie; sourceTree = BUILT_PRODUCTS_DIR; };
 		095806A522243C55005F6B06 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		095806AD22243C95005F6B06 /* TrieNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = TrieNode.hpp; sourceTree = "<group>"; };
+		095806B022245511005F6B06 /* Trie.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Trie.hpp; sourceTree = "<group>"; };
+		09D7D5D023519716003C6805 /* Trie */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Trie; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +60,10 @@
 		095806A422243C55005F6B06 /* Trie */ = {
 			isa = PBXGroup;
 			children = (
+				09D7D5D023519716003C6805 /* Trie */,
 				095806A522243C55005F6B06 /* main.cpp */,
+				095806B022245511005F6B06 /* Trie.hpp */,
+				095806AD22243C95005F6B06 /* TrieNode.hpp */,
 			);
 			path = Trie;
 			sourceTree = "<group>";
@@ -88,7 +94,7 @@
 		0958069A22243C55005F6B06 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1010;
+				LastUpgradeCheck = 1110;
 				ORGANIZATIONNAME = ansao;
 				TargetAttributes = {
 					095806A122243C55005F6B06 = {
@@ -102,6 +108,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 0958069922243C55005F6B06;
 			productRefGroup = 095806A322243C55005F6B06 /* Products */;
@@ -239,6 +246,7 @@
 		095806AA22243C55005F6B06 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -247,6 +255,7 @@
 		095806AB22243C55005F6B06 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
